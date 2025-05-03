@@ -1,9 +1,10 @@
 package dev.tweep.hohenheim.util;
 
-import lombok.NonNull;
+import java.util.Arrays;
+
 import org.bukkit.Bukkit;
 
-import java.util.Arrays;
+import lombok.NonNull;
 
 public final class Logger {
 

@@ -1,5 +1,9 @@
 package dev.tweep.hohenheim;
 
+import org.bukkit.Bukkit;
+import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.NotNull;
+
 import dev.tweep.hohenheim.constants.Items;
 import dev.tweep.hohenheim.constants.Recipes;
 import dev.tweep.hohenheim.listeners.PlayerEntropySwitchListener;
@@ -9,9 +13,6 @@ import dev.tweep.hohenheim.tasks.EntropyRegenerationTask;
 import dev.tweep.hohenheim.util.Logger;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import lombok.NonNull;
-import org.bukkit.Bukkit;
-import org.bukkit.plugin.java.JavaPlugin;
-import org.jetbrains.annotations.NotNull;
 
 
 public class Hohenheim extends JavaPlugin implements SlimefunAddon {

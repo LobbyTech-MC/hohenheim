@@ -1,10 +1,11 @@
 package dev.tweep.hohenheim.data;
 
-import lombok.Data;
-import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.jetbrains.annotations.Nullable;
+
+import lombok.Data;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 @Data
 public class BlockInputData {

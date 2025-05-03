@@ -1,5 +1,20 @@
 package dev.tweep.hohenheim.items.transmutation;
 
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.bukkit.Location;
+import org.bukkit.NamespacedKey;
+import org.bukkit.Particle;
+import org.bukkit.Sound;
+import org.bukkit.block.Block;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.Item;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.persistence.PersistentDataType;
+
 import dev.tweep.hohenheim.Hohenheim;
 import dev.tweep.hohenheim.data.BlockRecipe;
 import dev.tweep.hohenheim.data.ItemRecipe;
@@ -15,20 +30,6 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
 import lombok.NonNull;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
-import org.bukkit.Location;
-import org.bukkit.NamespacedKey;
-import org.bukkit.Particle;
-import org.bukkit.Sound;
-import org.bukkit.block.Block;
-import org.bukkit.entity.Entity;
-import org.bukkit.entity.Item;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.persistence.PersistentDataType;
-
-import java.util.Collection;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class TransmutationWand extends SlimefunItem {
 
@@ -76,7 +77,7 @@ public class TransmutationWand extends SlimefunItem {
             Logger.log(output.toString());
             block.setType(output.getItem().getType());
             BlockStorage.store(block, output.getId());
-            block.getWorld().spawnParticle(Particle.EXPLOSION_NORMAL, block.getLocation(), 1);
+            block.getWorld().spawnParticle(Particle.EXPLOSION, block.getLocation(), 1);
             block.getWorld().playSound(block.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
         }
     }
@@ -94,7 +95,7 @@ public class TransmutationWand extends SlimefunItem {
                 }
             }
             block.getWorld().dropItem(block.getLocation().clone().add(0, 1, 0), output);
-            block.getWorld().spawnParticle(Particle.SPELL_WITCH, block.getLocation(), 3);
+            block.getWorld().spawnParticle(Particle.WITCH, block.getLocation(), 3);
             block.getWorld().playSound(block.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
         }
     }

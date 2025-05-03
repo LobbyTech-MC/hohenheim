@@ -1,15 +1,16 @@
 package dev.tweep.hohenheim.tasks;
 
-import dev.tweep.hohenheim.data.PlayerData;
-import dev.tweep.hohenheim.managers.EntropyManager;
-import net.md_5.bungee.api.ChatMessageType;
-import net.md_5.bungee.api.chat.TextComponent;
+import java.util.Iterator;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import java.util.Iterator;
+import dev.tweep.hohenheim.data.PlayerData;
+import dev.tweep.hohenheim.managers.EntropyManager;
+import net.md_5.bungee.api.ChatMessageType;
+import net.md_5.bungee.api.chat.TextComponent;
 
 public class EntropyActionBarTask extends BukkitRunnable {
     @Override

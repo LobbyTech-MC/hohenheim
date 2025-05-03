@@ -1,11 +1,11 @@
 package dev.tweep.hohenheim.managers;
 
-import dev.tweep.hohenheim.data.PlayerData;
-import lombok.NonNull;
-
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.UUID;
+
+import dev.tweep.hohenheim.data.PlayerData;
+import lombok.NonNull;
 
 public final class EntropyManager {
 

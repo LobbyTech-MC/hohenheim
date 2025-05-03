@@ -1,10 +1,11 @@
 package dev.tweep.hohenheim.constants;
 
+import org.bukkit.Material;
+import org.bukkit.inventory.ItemStack;
+
 import dev.tweep.hohenheim.data.BlockInputData;
 import dev.tweep.hohenheim.data.BlockRecipe;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import org.bukkit.Material;
-import org.bukkit.inventory.ItemStack;
 
 public class Recipes {
 

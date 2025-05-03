@@ -1,12 +1,5 @@
 package dev.tweep.hohenheim.managers;
 
-import com.google.gson.Gson;
-import com.google.gson.internal.LinkedTreeMap;
-import com.google.gson.reflect.TypeToken;
-import dev.tweep.hohenheim.data.PlayerData;
-import dev.tweep.hohenheim.util.Logger;
-import lombok.NonNull;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
@@ -15,6 +8,14 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Map;
 import java.util.UUID;
+
+import com.google.gson.Gson;
+import com.google.gson.internal.LinkedTreeMap;
+import com.google.gson.reflect.TypeToken;
+
+import dev.tweep.hohenheim.data.PlayerData;
+import dev.tweep.hohenheim.util.Logger;
+import lombok.NonNull;
 
 public class PersistentDataManager {
 

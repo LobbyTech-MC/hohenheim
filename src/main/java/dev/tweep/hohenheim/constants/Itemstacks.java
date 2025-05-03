@@ -1,8 +1,9 @@
 package dev.tweep.hohenheim.constants;
 
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 
 public final class Itemstacks {
 

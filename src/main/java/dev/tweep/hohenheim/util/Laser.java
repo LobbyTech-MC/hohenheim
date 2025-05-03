@@ -1,12 +1,13 @@
 package dev.tweep.hohenheim.util;
 
-import lombok.NonNull;
 import org.bukkit.Color;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Particle;
 import org.bukkit.block.Block;
 import org.bukkit.util.Vector;
+
+import lombok.NonNull;
 
 public final class Laser {
 
@@ -24,7 +25,7 @@ public final class Laser {
         Vector step = direction.clone().normalize().multiply(STEP_PER_BLOCK);
         while (particleLoc.getBlock().getType() == Material.AIR && iterations < MAX_STEPS_LASER) {
             particleLoc.add(step);
-            particleLoc.getWorld().spawnParticle(Particle.REDSTONE, particleLoc, 2,
+            particleLoc.getWorld().spawnParticle(Particle.DUST, particleLoc, 2,
                     new Particle.DustOptions(Color.fromRGB(255, 0, 255), 1));
             iterations++;
         }

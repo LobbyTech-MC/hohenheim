@@ -1,10 +1,11 @@
 package dev.tweep.hohenheim.tasks;
 
-import dev.tweep.hohenheim.data.PlayerData;
-import dev.tweep.hohenheim.managers.EntropyManager;
+import java.util.Iterator;
+
 import org.bukkit.scheduler.BukkitRunnable;
 
-import java.util.Iterator;
+import dev.tweep.hohenheim.data.PlayerData;
+import dev.tweep.hohenheim.managers.EntropyManager;
 
 public class EntropyRegenerationTask extends BukkitRunnable {
     @Override

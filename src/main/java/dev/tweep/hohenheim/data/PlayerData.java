@@ -1,9 +1,9 @@
 package dev.tweep.hohenheim.data;
 
-import lombok.Data;
-
 import java.io.Serializable;
 import java.util.UUID;
+
+import lombok.Data;
 
 @Data
 public class PlayerData implements Serializable {

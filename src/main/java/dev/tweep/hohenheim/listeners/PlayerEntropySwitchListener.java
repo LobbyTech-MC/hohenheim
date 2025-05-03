@@ -1,8 +1,7 @@
 package dev.tweep.hohenheim.listeners;
 
-import dev.tweep.hohenheim.Hohenheim;
-import dev.tweep.hohenheim.managers.EntropyManager;
-import lombok.NonNull;
+import java.util.UUID;
+
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -12,7 +11,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
 
-import java.util.UUID;
+import dev.tweep.hohenheim.Hohenheim;
+import dev.tweep.hohenheim.managers.EntropyManager;
+import lombok.NonNull;
 
 public class PlayerEntropySwitchListener implements Listener {
 

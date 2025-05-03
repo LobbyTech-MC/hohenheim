@@ -1,11 +1,12 @@
 package dev.tweep.hohenheim.data;
 
-import lombok.Data;
-import lombok.NonNull;
-import org.bukkit.inventory.ItemStack;
-
 import java.util.HashMap;
 import java.util.List;
+
+import org.bukkit.inventory.ItemStack;
+
+import lombok.Data;
+import lombok.NonNull;
 
 @Data
 public class ItemRecipe {
